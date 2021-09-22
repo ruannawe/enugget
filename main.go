@@ -2,9 +2,7 @@ package main
 
 import (
 	usersController "github.com/ruannawe/enugget/controllers"
-	// teste "github.com/ruannawe/enugget/routes"
 	"github.com/gofiber/fiber/v2"
-	"fmt"
 )
 
 func main() {
