@@ -1,13 +1,7 @@
 package routes
 
-import (
-	"github.com/gofiber/fiber/v2"
-	usersController "github.com/ruannawe/enugget/controllers"
-)
+import "github.com/gofiber/fiber/v2"
 
-func setupRoutes(app *fiber.App) {
-	app.Get("/api/v1/users", func(c *fiber.Ctx) error {
-		usersController.FindAll(c)
-		return nil
-	})
+func Routes(app *fiber.App) {
+	userRoutes(app)
 }
