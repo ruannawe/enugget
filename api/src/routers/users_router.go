@@ -8,27 +8,27 @@ import (
 
 func userRoutes(app *fiber.App) {
 	app.Get("/api/v1/users", func(c *fiber.Ctx) error {
-		controller.GetUsers(c)
+		controllers.GetUsers(c)
 		return nil
 	})
 
 	app.Get("/api/v1/users/:id", func(c *fiber.Ctx) error {
-		controller.GetUser(c)
+		controllers.GetUser(c)
 		return nil
 	})
 
 	app.Post("/api/v1/users", func(c *fiber.Ctx) error {
-		controller.CreateUser(c)
+		controllers.CreateUser(c)
 		return nil
 	})
 
 	app.Patch("/api/v1/users", func(c *fiber.Ctx) error {
-		controller.UpdateUser(c)
+		controllers.UpdateUser(c)
 		return nil
 	})
 
 	app.Delete("/api/v1/users", func(c *fiber.Ctx) error {
-		controller.DestroyUser(c)
+		controllers.DestroyUser(c)
 		return nil
 	})
 }
